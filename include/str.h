@@ -2,6 +2,7 @@
 #define STR_H
 
 #include <unistd.h>
+#include <stdbool.h>
 
 struct str {
 	char *data;
@@ -10,6 +11,13 @@ struct str {
 };
 
 typedef struct str str_t;
+
+struct optstr {
+	bool exist;
+	str_t str;
+};
+
+typedef struct opstr optstr_t;
 
 void get_line(str_t *s);
 
