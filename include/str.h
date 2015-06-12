@@ -17,7 +17,7 @@ struct optstr {
 	str_t str;
 };
 
-typedef struct opstr optstr_t;
+typedef struct optstr optstr_t;
 
 void get_line(str_t *s);
 
